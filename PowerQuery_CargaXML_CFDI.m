@@ -30,7 +30,9 @@
 
 let
     // ==== 1) CONFIGURA AQUÍ ====
-    CarpetaXML  = "C:\Users\DELL\Downloads\CFDI",   // carpeta con los .xml
+    // Pon aquí la carpeta del contribuyente. Estructura recomendada:
+    //   C:\Users\DELL\Documents\jorgenunez\EMIRA\CFDI\<RFC>\   (los .xml adentro)
+    CarpetaXML  = "C:\Users\DELL\Documents\jorgenunez\EMIRA\CFDI\RFC_DEL_CONTRIBUYENTE",
     RFCEsperado = "",   // RFC del contribuyente; si lo dejas "", usa el nombre de la carpeta
 
     RFCCarpeta = if RFCEsperado <> "" then RFCEsperado
