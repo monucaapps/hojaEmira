@@ -30,10 +30,11 @@
 
 let
     // ==== 1) CONFIGURA AQUÍ ====
-    // Pon aquí la carpeta del contribuyente. Estructura recomendada:
-    //   C:\Users\DELL\Documents\jorgenunez\EMIRA\CFDI\<RFC>\   (los .xml adentro)
-    CarpetaXML  = "C:\Users\DELL\Documents\jorgenunez\EMIRA\CFDI\RFC_DEL_CONTRIBUYENTE",
-    RFCEsperado = "",   // RFC del contribuyente; si lo dejas "", usa el nombre de la carpeta
+    // Carpeta del contribuyente = el RFC del RECEPTOR (el empleado/contribuyente).
+    // Estructura recomendada (nombra la carpeta con ese RFC):
+    //   C:\Users\DELL\Documents\jorgenunez\EMIRA\CFDI\NULJ770313CL7\   (los .xml adentro)
+    CarpetaXML  = "C:\Users\DELL\Documents\jorgenunez\EMIRA\CFDI\NULJ770313CL7",
+    RFCEsperado = "",   // RFC del RECEPTOR; si lo dejas "", usa el nombre de la carpeta
 
     RFCCarpeta = if RFCEsperado <> "" then RFCEsperado
                  else List.Last(Text.Split(Text.TrimEnd(CarpetaXML, "\"), "\")),
